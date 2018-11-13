@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.FXMLController">
+    <children>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="90.0" text="Add Question" />
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="48.0" prefHeight="34.0" prefWidth="90.0" text="Question">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="32.0" layoutY="167.0" prefHeight="180.0" prefWidth="366.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="95.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="10.0" prefWidth="271.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="90.0" text="Option A" />
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="90.0" text="Option B" GridPane.rowIndex="1" />
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="90.0" text="Option C" GridPane.rowIndex="2" />
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="90.0" text="Option D" GridPane.rowIndex="3" />
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="90.0" text="Correct Answer" GridPane.rowIndex="4" />
+            <TextField fx:id="optA" GridPane.columnIndex="1" />
+            <TextField fx:id="optB" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="optC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="optD" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="ans" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <TextArea fx:id="question" layoutX="126.0" layoutY="48.0" prefHeight="96.0" prefWidth="271.0" scrollTop="5.0" wrapText="true" />
+      <HBox layoutX="22.0" layoutY="380.0" spacing="20.0">
+         <children>
+            <Button fx:id="addQuest" mnemonicParsing="false" onAction="#AddQuestion" prefHeight="42.0" prefWidth="121.0" text="Add Question">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="clear" mnemonicParsing="false" onAction="#Clear" prefHeight="42.0" prefWidth="121.0" text="Clear" />
+            <Button fx:id="close" mnemonicParsing="false" onAction="#Close" prefHeight="42.0" prefWidth="121.0" text="Close" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
