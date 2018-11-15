@@ -13,9 +13,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="451.0" prefWidth="462.0" styleClass="AnchorPane" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject2.FXMLController">
     <children>
-      <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="90.0" text="Add Question" />
+      <Label id="addQ" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="132.0" styleClass="addQ" text="Add Question" />
       <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="48.0" prefHeight="34.0" prefWidth="90.0" text="Question">
          <font>
             <Font name="System Bold" size="14.0" />

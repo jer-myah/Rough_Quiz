@@ -1,7 +1,19 @@
 
-
-.button {
-    -fx-font-weight: bold;
+.AnchorPane {
+    -fx-background-color: wheat;
 }
 
 
+.button {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-background-color: green;
+}
+
+.addQ {
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-text-fill: green;
+    
+}
